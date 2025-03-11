@@ -72,7 +72,7 @@ def process_tv(tv_ip: str, image_data: BytesIO, file_type: str, image_url: str, 
             if remote_filename is None:
                 raise Exception('No remote filename returned')
 
-            tv.art().select_image(remote_filename, show=False)
+            tv.art().select_image(remote_filename, show=True)
             logging.info(f'Image uploaded and selected on TV at {tv_ip}')
             # Add the filename to the list of uploaded filenames
             uploaded_files.append({
@@ -90,7 +90,7 @@ def process_tv(tv_ip: str, image_data: BytesIO, file_type: str, image_url: str, 
         if not args.upload_all:
             # Select the image using the remote file name only if not in 'upload-all' mode
             logging.info(f'Setting existing image on TV at {tv_ip}, skipping upload')
-            tv.art().select_image(remote_filename, show=False)
+            tv.art().select_image(remote_filename, show=True)
 
 def get_image_for_tv(tv_ip: str):
     selected_source = random.choice(sources)
