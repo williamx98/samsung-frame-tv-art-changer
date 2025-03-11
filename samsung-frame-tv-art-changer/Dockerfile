@@ -8,7 +8,7 @@ RUN \
 
 # Install Python dependencies
 RUN \
-    pip3 install git+https://github.com/NickWaterton/samsung-tv-ws-api.git pillow
+    pip3 install git+https://github.com/NickWaterton/samsung-tv-ws-api.git pillow --break-system-packages
 
 # Copy data for add-on
 COPY run.sh /

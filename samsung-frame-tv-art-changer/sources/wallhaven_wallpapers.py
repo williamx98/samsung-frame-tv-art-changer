@@ -7,8 +7,11 @@ from io import BytesIO
 from typing import Optional, Tuple, Union, List, Dict
 
 def get_image_url(args):
-    logging.info('Fetching image list from Wallhaven Arts & Culture...')
+    logging.info('Fetching image list from Wallhaven')
     json_url = args.wallhaven_url
+
+    logging.info(json_url)
+
     try:
         response = requests.get(json_url)
         response.raise_for_status()

@@ -1,6 +1,6 @@
 name: "Samsung Frame TV Art Changer"
 description: "Automatically downloads and displays artwork on your Samsung Frame TV from Google Art, Bing Wallpapers, or your local media folder."
-version: "1.0.9"
+version: "1.0.8"
 url: "https://github.com/williamx98/samsung-frame-tv-art-changer"
 slug: "hass-frametv-artchanger"
 init: false
@@ -19,7 +19,7 @@ options:
   google_art: false
   download_high_res: true
   wallhaven_wallpapers: true
-  wallhaven_url: ""
+  wallhaven_url: "https://wallhaven.cc/api/v1/search?q=landscape+photo&categories=101&purity=100&atleast=3840x2160&topRange=1M&sorting=toplist&order=desc&ai_art_filter=1"
   media_folder: false
   same_image: false
 schema:
