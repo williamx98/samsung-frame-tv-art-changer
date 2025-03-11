@@ -11,6 +11,10 @@ class Utils:
     @staticmethod
     def resize_and_crop_image(image_data, target_width=3840, target_height=2160):
         with Image.open(image_data) as img:
+
+            if img.width == target_width and img.height == target_height:
+                return img
+
             # Calculate the aspect ratio
             img_ratio = img.width / img.height
             target_ratio = target_width / target_height
