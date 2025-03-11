@@ -10,8 +10,8 @@ PARAMS=""
 if bashio::config.true 'google_art'; then
     PARAMS="${PARAMS} --google-art"
 fi
-if bashio::config.true 'bing_wallpapers'; then
-    PARAMS="${PARAMS} --bing-wallpapers"
+if bashio::config.true 'wallhaven_wallpapers'; then
+    PARAMS="${PARAMS} --wallhaven-wallpapers"
 fi
 if bashio::config.true 'media_folder'; then
     PARAMS="${PARAMS} --media-folder"

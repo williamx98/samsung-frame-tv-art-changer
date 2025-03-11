@@ -9,7 +9,7 @@ import random
 sys.path.append('../')
 
 from samsungtvws import SamsungTVWS
-from sources import bing_wallpapers, google_art, media_folder
+from sources import wallhaven_wallpapers, google_art, media_folder
 from utils.utils import Utils
 
 # Add command line argument parsing
@@ -40,8 +40,8 @@ else:
 logging.basicConfig(level=logging.INFO)
 
 sources = []
-if args.bing_wallpapers:
-    sources.append(bing_wallpapers)
+if args.wallhaven_wallpapers:
+    sources.append(wallhaven_wallpapers)
 if args.google_art:
     sources.append(google_art)
 if args.media_folder:
