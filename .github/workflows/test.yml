@@ -15,5 +15,5 @@ jobs:
           args: |
             --test \
             --all \
-            --target /data/homeassistant-samsung-frametv-artchanger \
-            --docker-hub vivalatech
+            --target /data/samsung-frame-tv-art-changer \
+            --docker-hub williamx98
