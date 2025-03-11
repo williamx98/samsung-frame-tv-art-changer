@@ -24,7 +24,7 @@ if bashio::config.true 'same_image'; then
     PARAMS="${PARAMS} --same-image"
 fi
 
-python3 art.py --tvip ${TVIP} ${PARAMS} --url
+python3 art.py --tvip ${TVIP} ${PARAMS} --wallhavenURL ${URL}
 
 echo "done, closing now!"
 kill -s SIGHUP 1
