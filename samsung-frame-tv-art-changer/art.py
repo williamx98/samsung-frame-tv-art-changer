@@ -20,7 +20,8 @@ parser.add_argument('--tvip', help='Comma-separated IP addresses of Samsung Fram
 parser.add_argument('--same-image', action='store_true', help='Use the same image for all TVs (default: different images)')
 parser.add_argument('--google-art', action='store_true', help='Download and upload image from Google Arts & Culture')
 parser.add_argument('--download-high-res', action='store_true', help='Download high resolution image using dezoomify-rs')
-parser.add_argument('--bing-wallpapers', action='store_true', help='Download and upload image from Bing Wallpapers')
+parser.add_argument('--wallhaven-wallpapers', action='store_true', help='Download and upload image from Bing Wallpapers')
+parser.add_argument('--wallhaven-url', action='store_true', help='Download and upload image from Bing Wallpapers')
 parser.add_argument('--media-folder', action='store_true', help='Use images from the local media folder')
 parser.add_argument('--debugimage', action='store_true', help='Save downloaded and resized images for inspection')
 

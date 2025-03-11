@@ -11,6 +11,9 @@ configuration:
   wallhaven_wallpapers:
     name: Wallhaven Wallpapers
     description: Download a random image from Wallhaven Wallpapers
+  wallhaven_url:
+    name: Wallhaven URL
+    description: Download a random image from Wallhaven Wallpapers
   media_folder:
     name: Media Folder
     description: Upload images from the /media/frame folder

@@ -8,7 +8,7 @@ from typing import Optional, Tuple, Union, List, Dict
 
 def get_image_url(args):
     logging.info('Fetching image list from Wallhaven Arts & Culture...')
-    json_url = "https://wallhaven.cc/api/v1/search?q=landscape&categories=110&purity=100&topRange=3d&sorting=toplist&order=desc&ai_art_filter=1"
+    json_url = args.wallhaven_url
     try:
         response = requests.get(json_url)
         response.raise_for_status()

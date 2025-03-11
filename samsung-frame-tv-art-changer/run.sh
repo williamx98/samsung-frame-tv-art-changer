@@ -13,6 +13,9 @@ fi
 if bashio::config.true 'wallhaven_wallpapers'; then
     PARAMS="${PARAMS} --wallhaven-wallpapers"
 fi
+if bashio::config.true 'wallhaven_url'; then
+    PARAMS="${PARAMS} --wallhaven-url"
+fi
 if bashio::config.true 'media_folder'; then
     PARAMS="${PARAMS} --media-folder"
 fi

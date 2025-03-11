@@ -1,6 +1,6 @@
 name: "Samsung Frame TV Art Changer"
 description: "Automatically downloads and displays artwork on your Samsung Frame TV from Google Art, Bing Wallpapers, or your local media folder."
-version: "1.0.5"
+version: "1.0.9"
 url: "https://github.com/williamx98/samsung-frame-tv-art-changer"
 slug: "hass-frametv-artchanger"
 init: false
@@ -15,10 +15,11 @@ arch:
 map:
   - "media:rw"
 options:
-  tv: "192.168.1.199"
-  google_art: true
+  tv: "192.168.1.58"
+  google_art: false
   download_high_res: true
-  wallhaven_wallpapers: false
+  wallhaven_wallpapers: true
+  wallhaven_url: ""
   media_folder: false
   same_image: false
 schema:
@@ -26,6 +27,7 @@ schema:
   google_art: "bool?"
   download_high_res: "bool?"
   wallhaven_wallpapers: "bool?"
+  wallhaven_url: "str?"
   media_folder: "bool?"
   same_image: "bool?"
-image: williamx98/{arch}-addon-homeassistant-samsung-frametv-artchanger
+image: williamx98/{arch}-samsung-frame-tv-art-changer
