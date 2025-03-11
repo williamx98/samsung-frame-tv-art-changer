@@ -6,6 +6,8 @@ URL=$(bashio::config 'wallhaven_url')
 mkdir -p /media/frame
 echo "Using ${TVIP} as the IP's of the Samsung Frame"
 
+echo "Using ${URL}"
+
 PARAMS=""
 
 if bashio::config.true 'google_art'; then
@@ -24,7 +26,7 @@ if bashio::config.true 'same_image'; then
     PARAMS="${PARAMS} --same-image"
 fi
 
-python3 art.py --tvip ${TVIP} ${PARAMS} --wallhavenURL ${URL}
+python3 art.py --tvip ${TVIP} ${PARAMS} --wallhaven-url ${URL}
 
 echo "done, closing now!"
 kill -s SIGHUP 1
