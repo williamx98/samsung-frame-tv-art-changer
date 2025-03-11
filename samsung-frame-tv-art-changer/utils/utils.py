@@ -1,5 +1,6 @@
 from io import BytesIO
 from PIL import Image
+import logging
 from typing import List, Dict, Optional
 
 class Utils:
