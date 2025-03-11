@@ -13,6 +13,7 @@ class Utils:
         with Image.open(image_data) as img:
 
             if img.width == target_width and img.height == target_height:
+                logging.info("image is already correct size")
                 return img
 
             # Calculate the aspect ratio
